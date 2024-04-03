@@ -1,0 +1,8 @@
+APP_NAME=MrCarwash
+NEXT_PUBLIC_APP_NAME=MrCarwash
+
+NEXT_PUBLIC_HST=http://127.0.0.1:8000/
+HST=http://127.0.0.1:8000/
+NEXT_PUBLIC_DEBUG=true
+
+
