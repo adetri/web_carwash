@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:fd21ee69d1a95b8f4edd7167ce47eb7cc6e369d771bead9a54beeccd4083c630bbca9814e494c397410ac543aeda50650a2e4ef4d749698788fb155bc2841e7d#npm:14.1.3"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:fd21ee69d1a95b8f4edd7167ce47eb7cc6e369d771bead9a54beeccd4083c630bbca9814e494c397410ac543aeda50650a2e4ef4d749698788fb155bc2841e7d#npm:18.2.0"],\
-          ["sweetalert2", "npm:11.10.6"]\
+          ["sweetalert2", "npm:11.10.7"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -159,10 +159,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["caniuse-lite", [\
-      ["npm:1.0.30001597", {\
-        "packageLocation": "../../.yarn/berry/cache/caniuse-lite-npm-1.0.30001597-1e349680d5-10c0.zip/node_modules/caniuse-lite/",\
+      ["npm:1.0.30001605", {\
+        "packageLocation": "../../.yarn/berry/cache/caniuse-lite-npm-1.0.30001605-5873e8b4d0-10c0.zip/node_modules/caniuse-lite/",\
         "packageDependencies": [\
-          ["caniuse-lite", "npm:1.0.30001597"]\
+          ["caniuse-lite", "npm:1.0.30001605"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -491,7 +491,7 @@ const RAW_RUNTIME_STATE =
           ["@types/react-dom", null],\
           ["@types/sass", null],\
           ["busboy", "npm:1.6.0"],\
-          ["caniuse-lite", "npm:1.0.30001597"],\
+          ["caniuse-lite", "npm:1.0.30001605"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["postcss", "npm:8.4.31"],\
           ["react", "npm:18.2.0"],\
@@ -528,7 +528,7 @@ const RAW_RUNTIME_STATE =
           ["postcss", "npm:8.4.31"],\
           ["nanoid", "npm:3.3.7"],\
           ["picocolors", "npm:1.0.0"],\
-          ["source-map-js", "npm:1.0.2"]\
+          ["source-map-js", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -597,10 +597,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["source-map-js", [\
-      ["npm:1.0.2", {\
-        "packageLocation": "../../.yarn/berry/cache/source-map-js-npm-1.0.2-ee4f9f9b30-10c0.zip/node_modules/source-map-js/",\
+      ["npm:1.2.0", {\
+        "packageLocation": "../../.yarn/berry/cache/source-map-js-npm-1.2.0-6e63f357e5-10c0.zip/node_modules/source-map-js/",\
         "packageDependencies": [\
-          ["source-map-js", "npm:1.0.2"]\
+          ["source-map-js", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -646,10 +646,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["sweetalert2", [\
-      ["npm:11.10.6", {\
-        "packageLocation": "../../.yarn/berry/cache/sweetalert2-npm-11.10.6-395aa793fb-10c0.zip/node_modules/sweetalert2/",\
+      ["npm:11.10.7", {\
+        "packageLocation": "../../.yarn/berry/cache/sweetalert2-npm-11.10.7-56b25bde11-10c0.zip/node_modules/sweetalert2/",\
         "packageDependencies": [\
-          ["sweetalert2", "npm:11.10.6"]\
+          ["sweetalert2", "npm:11.10.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -667,7 +667,7 @@ const RAW_RUNTIME_STATE =
           ["next", "virtual:fd21ee69d1a95b8f4edd7167ce47eb7cc6e369d771bead9a54beeccd4083c630bbca9814e494c397410ac543aeda50650a2e4ef4d749698788fb155bc2841e7d#npm:14.1.3"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:fd21ee69d1a95b8f4edd7167ce47eb7cc6e369d771bead9a54beeccd4083c630bbca9814e494c397410ac543aeda50650a2e4ef4d749698788fb155bc2841e7d#npm:18.2.0"],\
-          ["sweetalert2", "npm:11.10.6"]\
+          ["sweetalert2", "npm:11.10.7"]\
         ],\
         "linkType": "SOFT"\
       }]\
