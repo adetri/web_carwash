@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
       // dbg(usr_id['user_id']);
       
 
-      if (!getCookie('usrname')) {
+      if (!getCookie('usrname') || getCookie('usrname') =='undefined') {
         const request_user = await makeRequest('/api/getuser', 'POST', null,false,jwt);
         setCookie('usrname', request_user['data']['user']);
 
-
+        dbg("send ",getCookie('usrname'));
 
 
       }

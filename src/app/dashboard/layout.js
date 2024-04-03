@@ -1,9 +1,14 @@
 "use client"
 import {  getCookie } from "@/utils/method";
 import { useEffect, useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function secondLayout({ children }) {
-  const [usrname, setUsrname] = useState(getCookie('usrname'));
+  const router = useRouter();
+  // window.$ = window.jquery = require('./node_modules/jquery');
+  // window.dt = require('./node_modules/datatables.net')();
+  // window.$('#table_id').DataTable();
+  const [usrname, setUsrname] = useState(null);
   useEffect(() => {
     // This code will only run on the client-side
     // You can safely access the `document` object here
@@ -15,8 +20,9 @@ export default function secondLayout({ children }) {
    
     // dbg(getJwtCookie());\
     // dbg(user['user_id']);
-
-  }, []); // Empty dependency array ensures this effect runs only once after component mount
+    console.log(username);
+    console.log("second layout execute");
+  }, [router]); // Empty dependency array ensures this effect runs only once after component mount
 
 
 
@@ -69,9 +75,20 @@ export default function secondLayout({ children }) {
             <hr className="sidebar-divider my-0" />
             {/* Nav Item - Dashboard */}
             <li className="nav-item active">
-              <a className="nav-link" href="/">
+              <a className="nav-link" href="/dashboard">
                 <i className="fas fa-fw fa-tachometer-alt" />
                 <span>Dashboard</span>
+              </a>
+            </li>
+
+            {/* Divider */}
+            <hr className="sidebar-divider" />
+            {/* Heading */}
+            <div className="sidebar-heading">Report</div>
+            <li className="nav-item">
+              <a className="nav-link" href="/dashboard/report">
+                <i className="fas fa-fw fa-table" />
+                <span>Report</span>
               </a>
             </li>
             {/* Divider */}
@@ -79,6 +96,9 @@ export default function secondLayout({ children }) {
             {/* Heading */}
             <div className="sidebar-heading">Interface</div>
             {/* Nav Item - Pages Collapse Menu */}
+
+
+    
             <li className="nav-item">
               <a
                 className="nav-link collapsed"

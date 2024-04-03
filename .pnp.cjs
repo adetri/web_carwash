@@ -26,6 +26,8 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["chart.js", "npm:2.9.3"],\
+          ["datatables.net-dt", "npm:2.0.3"],\
           ["dotenv", "npm:16.4.5"],\
           ["js-cookie", "npm:3.0.5"],\
           ["jsonwebtoken", "npm:9.0.2"],\
@@ -165,11 +167,90 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["chart.js", [\
+      ["npm:2.9.3", {\
+        "packageLocation": "../../.yarn/berry/cache/chart.js-npm-2.9.3-8b7649c089-10c0.zip/node_modules/chart.js/",\
+        "packageDependencies": [\
+          ["chart.js", "npm:2.9.3"],\
+          ["chartjs-color", "npm:2.4.1"],\
+          ["moment", "npm:2.30.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["chartjs-color", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../.yarn/berry/cache/chartjs-color-npm-2.4.1-c16310d721-10c0.zip/node_modules/chartjs-color/",\
+        "packageDependencies": [\
+          ["chartjs-color", "npm:2.4.1"],\
+          ["chartjs-color-string", "npm:0.6.0"],\
+          ["color-convert", "npm:1.9.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["chartjs-color-string", [\
+      ["npm:0.6.0", {\
+        "packageLocation": "../../.yarn/berry/cache/chartjs-color-string-npm-0.6.0-49eec5a83f-10c0.zip/node_modules/chartjs-color-string/",\
+        "packageDependencies": [\
+          ["chartjs-color-string", "npm:0.6.0"],\
+          ["color-name", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["client-only", [\
       ["npm:0.0.1", {\
         "packageLocation": "../../.yarn/berry/cache/client-only-npm-0.0.1-07d3e9505c-10c0.zip/node_modules/client-only/",\
         "packageDependencies": [\
           ["client-only", "npm:0.0.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["color-convert", [\
+      ["npm:1.9.3", {\
+        "packageLocation": "../../.yarn/berry/cache/color-convert-npm-1.9.3-1fe690075e-10c0.zip/node_modules/color-convert/",\
+        "packageDependencies": [\
+          ["color-convert", "npm:1.9.3"],\
+          ["color-name", "npm:1.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["color-name", [\
+      ["npm:1.1.3", {\
+        "packageLocation": "../../.yarn/berry/cache/color-name-npm-1.1.3-728b7b5d39-10c0.zip/node_modules/color-name/",\
+        "packageDependencies": [\
+          ["color-name", "npm:1.1.3"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.1.4", {\
+        "packageLocation": "../../.yarn/berry/cache/color-name-npm-1.1.4-025792b0ea-10c0.zip/node_modules/color-name/",\
+        "packageDependencies": [\
+          ["color-name", "npm:1.1.4"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["datatables.net", [\
+      ["npm:2.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/datatables.net-npm-2.0.3-228d4be437-10c0.zip/node_modules/datatables.net/",\
+        "packageDependencies": [\
+          ["datatables.net", "npm:2.0.3"],\
+          ["jquery", "npm:3.7.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["datatables.net-dt", [\
+      ["npm:2.0.3", {\
+        "packageLocation": "../../.yarn/berry/cache/datatables.net-dt-npm-2.0.3-156c257df8-10c0.zip/node_modules/datatables.net-dt/",\
+        "packageDependencies": [\
+          ["datatables.net-dt", "npm:2.0.3"],\
+          ["datatables.net", "npm:2.0.3"],\
+          ["jquery", "npm:3.7.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -198,6 +279,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../.yarn/berry/cache/graceful-fs-npm-4.2.11-24bb648a68-10c0.zip/node_modules/graceful-fs/",\
         "packageDependencies": [\
           ["graceful-fs", "npm:4.2.11"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["jquery", [\
+      ["npm:3.7.1", {\
+        "packageLocation": "../../.yarn/berry/cache/jquery-npm-3.7.1-eeeac0f21e-10c0.zip/node_modules/jquery/",\
+        "packageDependencies": [\
+          ["jquery", "npm:3.7.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -341,6 +431,15 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["lru-cache", "npm:6.0.0"],\
           ["yallist", "npm:4.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["moment", [\
+      ["npm:2.30.1", {\
+        "packageLocation": "../../.yarn/berry/cache/moment-npm-2.30.1-1c51a5c631-10c0.zip/node_modules/moment/",\
+        "packageDependencies": [\
+          ["moment", "npm:2.30.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -560,6 +659,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["test_template", "workspace:."],\
+          ["chart.js", "npm:2.9.3"],\
+          ["datatables.net-dt", "npm:2.0.3"],\
           ["dotenv", "npm:16.4.5"],\
           ["js-cookie", "npm:3.0.5"],\
           ["jsonwebtoken", "npm:9.0.2"],\
