@@ -105,3 +105,28 @@ export function removeBearer(token = null){
 }
     
 
+
+export function getStringDate(tgl=null){
+
+
+    const dateString = tgl;
+    const date = new Date(dateString);
+    
+    const year = date.getFullYear();
+    const month = String(date.getMonth() + 1).padStart(2, '0'); // Months are 0-indexed
+    const day = String(date.getDate()).padStart(2, '0');
+    
+    const formattedDate = `${year}-${month}-${day}`;
+    return formattedDate
+
+}
+export function CurrencyFormatter(amount) {
+    const formattedAmount = new Intl.NumberFormat('id-ID', {
+      style: 'currency',
+      currency: 'IDR',
+    }).format(amount);
+    const integerPart = formattedAmount.split(',')[0];
+
+    return integerPart;
+  }
+  

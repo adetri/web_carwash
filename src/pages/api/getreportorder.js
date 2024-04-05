@@ -9,7 +9,7 @@ export default async function handler(req, res) {
     dbg('Received form order data:', formData)
 
     try {
-        const request = await makeRequest('order/order-report','POST',formData,true,req.headers['authorization']);
+        const request = await makeRequest('order/order-report2','POST',formData,true,req.headers['authorization']);
         if(request.status == 200){
             return res.status(200).json({data: request.data });
         }else{

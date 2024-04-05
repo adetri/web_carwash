@@ -14,7 +14,6 @@ export default function report() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
   const [dataOrder, setdataOrder] = useState(null);
-  const headTable =['owner name', 'Plat num','washer', 'services list','service price']
   useEffect(() => {
     const jwt = getJwtCookie();
     const data = { 'start_date': '2024-03-1', 'end_date': '2024-03-31' }
@@ -75,7 +74,7 @@ export default function report() {
           {/* Card Body */}
           <div className="card-body">
 
-            {dataOrder == null ?"" :  <CustomTable data={dataOrder} header={headTable}/>}
+         <CustomTable data={dataOrder} />
           
           </div>
         </div>
