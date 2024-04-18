@@ -3,7 +3,7 @@
 import React from 'react';
 function Alr({name}) {
 
-    return(<div class="alert alert-info" role="alert">
+    return(<div className="alert alert-info" role="alert">
     {name}
   </div>);
     

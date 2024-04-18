@@ -1,11 +1,12 @@
 "use client"
 import ContentTittle from "@/components/content_tittle.jsx";
-import CustomTable from "@/components/table";
+import TableReport from "./table";
 
 import { makeRequest } from '@/utils/api.js';
 import { getJwtCookie, dgb, setCookie, getCookie, dbg } from "@/utils/method";
 import React, { useState, useEffect } from 'react';
 
+import DataTableComponent from '@/components/datatable'
 export default function report() {
 
   // dgb(getCookie('athstatus')); 
@@ -13,23 +14,14 @@ export default function report() {
 
     return Math.floor(Math.random() * (max - min + 1)) + min;
   }
-  const [dataOrder, setdataOrder] = useState(null);
-  useEffect(() => {
-    const jwt = getJwtCookie();
-    const data = { 'start_date': '2024-03-1', 'end_date': '2024-03-31' }
-    const getReporOrder = async () => {
-      const request = await makeRequest('/api/getreportorder', 'POST', data, false, jwt);
-      dbg(`status report is : ${request.status}`)
-      dbg('data report is ', request.data)
-      setdataOrder(request.data['data'])
-    }
-    getReporOrder();
-  },[]
-  )
-
-  dbg('send to table is  ',dataOrder )
+  
 
 
+  const data1 = [
+    { id: 1, name: 'John' },
+    { id: 2, name: 'Alice' },
+    { id: 3, name: 'Bob' }
+  ];
 
   return (
     <div>
@@ -74,8 +66,8 @@ export default function report() {
           {/* Card Body */}
           <div className="card-body">
 
-         <CustomTable data={dataOrder} />
-          
+            <TableReport />
+
           </div>
         </div>
       </div>
